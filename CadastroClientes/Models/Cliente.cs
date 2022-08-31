@@ -21,6 +21,7 @@ namespace CadastroClientes.Models
         public string Nome { get; private set; }
 
         [Required(ErrorMessage = "Nascimento é Obrigatório!")]
+        [Display(Name = "Data de Nascimento")]
         public DateTime Nascimento { get; private set; }
 
         [Required(ErrorMessage = "Email é Obrigatório!")]
